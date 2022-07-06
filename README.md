@@ -15,8 +15,10 @@
         body{
             background-color: rgb(193, 226, 255);
             text-align: left;
-            margin-left: 70px;
-            margin-top: 70px;
+            margin: 50px;
+            margin-left: 35px;
+            margin-right: 35px;
+            
         }
         h1{
             
