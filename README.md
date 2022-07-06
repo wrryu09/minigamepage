@@ -26,9 +26,8 @@
             font-family: 'Futura';
             font-size: 50px;
             padding: 50px;
-            color: rgb(255, 89, 18);
         }
-        /*h1:hover, h1:focus { animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite; } 
+        h1:hover, h1:focus { animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite; } 
             @keyframes rainbowLink {     
             0% { color: #ff2a2a; }
             15% { color: #ff7a2a; }
@@ -38,7 +37,7 @@
             75% { color: #202082; }
             90% { color: #6b2aff; } 
             100% { color: #e82aff; }
-            }*/
+            }
 
         h3{
             font-family: 'Futura';
