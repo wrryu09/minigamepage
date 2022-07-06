@@ -1,4 +1,4 @@
-<html>
+<html >
 <head>
     <meta charset="UTF-8">
     <title>Memory Game</title>
@@ -171,7 +171,7 @@
                 cardsChosenIds=[];
 
                 if(cardsWon.length===cardArray.length/2){
-                    //resultDisplay.textContent = 'Congratulations! You found them all!'
+                    resultDisplay.textContent = 'Congratulations! You found them all!'
                     document.querySelector('h1').style.display='block';
                     //document.querySelector('#grid').style.display='none';
                     document.querySelector('#restart').style.display='block';
