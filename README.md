@@ -9,12 +9,14 @@
             flex-wrap: wrap;
             width: 450px;
             margin: none;
-            padding-top: 50px;
+            padding-top: 15px;
             
         }
         body{
             background-color: rgb(193, 226, 255);
-            text-align: center;
+            text-align: left;
+            margin-left: 70px;
+            margin-top: 70px;
         }
         h1{
             
@@ -53,8 +55,8 @@
     </style>
 </head>
 <body>
-    <h3 style="padding-top: 50px">Score: <span id="result"></span></h3>
-    <h3>Try: <span id="attempt"></span></h3>
+    <h3 style="padding-top: 50px; margin-bottom: 5px;">Score: <span id="result"></span></h3>
+    <h3 style="margin-top: 5px">Try: <span id="attempt"></span></h3>
     <h1 id="congrats">Congratulations! <br> You found them all!</h1>
 
     <div id="grid"></div>
