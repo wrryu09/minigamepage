@@ -20,7 +20,7 @@
             margin-right: 35px;
             
         }
-        h1{
+        #congrats{
             
             display: none;
             font-family: 'Futura';
