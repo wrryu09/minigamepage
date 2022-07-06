@@ -3,6 +3,9 @@
     <meta charset="UTF-8">
     <title>Memory Game</title>
     <style>
+        h1{
+        display: none;
+        }
         #grid{
             /*display: inline-block;*/
             display: inline-flex;
