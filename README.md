@@ -15,7 +15,7 @@
         .grid{
             margin: auto;
             margin-top: 25px;
-            width: 610px;
+            width: 612px;
             height: 607px;
             display: flex;
             flex-wrap: wrap;
