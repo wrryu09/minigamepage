@@ -10,14 +10,14 @@
             
             margin-top: 80px;  
             margin-left: 20px;
-            margin-right: 20px
+            margin-right: 20px;
             margin-bottom: 80px;
         }
         .grid{
             margin: auto;
             margin-top: 25px;
-            width: 330px;
-            height: 330px;
+            width: 306px;
+            height: 306px;
             display: flex;
             flex-wrap: wrap;
             border: 8px solid rgb(231, 72, 51);
@@ -42,10 +42,10 @@
             padding-bottom: 9px;
             font-family: 'Noto sans';
             font-size: 10pt;
-            font-weight: 400;
+            font-weight: 800;
             border-radius: 5px;
             margin-top: 50px;
-            border: black 3px solid;
+            border: black 2px solid;
             color: black;
             /*background-color: rgb(255, 231, 176);*/
             
@@ -53,16 +53,18 @@
         }
         #finalScore{
             display: block;
+            font-weight: 300;
+            font-size: 8pt;
         }
         #restartbtn{
             padding: 10px;
             font-family: 'Noto sans';
             visibility: hidden;
             font-size: 10pt;
-            font-weight: 400;
+            font-weight: 800;
             border-radius: 5px;
             margin-top: 20px;
-            border: black 3px solid;
+            border: black 2px solid;
             color: black;
         }
         
@@ -72,7 +74,7 @@
         #bestRecord{
             margin-top: 30px;
             text-align: center;
-            font-size: 16pt;
+            font-size: 12pt;
             display: none;
         }
         h1{
@@ -83,7 +85,7 @@
 </head>
 <body>
     
-    <div style="font-family: 'Noto sans'; font-weight: 400;">
+    <div style="font-family: 'Noto sans'; font-weight: 700;">
         <div>
         <span style="font-size: 10pt; ">Your score </span>
         <span id="score" style="font-size: 20pt; padding-left: 5px;" >0</span>
@@ -112,7 +114,7 @@
         <div class="square" id="8"></div>
         <div class="square" id="9"></div> </div>
 
-        <!--<h2 id="finishedscore"></h2>-->
+        
         <br><div><input type="button" id="restartbtn" value="restart" onclick="
             restart();
             this.style.visibility='hidden';
