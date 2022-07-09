@@ -9,18 +9,18 @@
             text-align: center;
             
             margin-top: 80px;  
-            margin-left: 30px;
-            margin-right: 30px
+            margin-left: 20px;
+            margin-right: 20px
             margin-bottom: 80px;
         }
         .grid{
             margin: auto;
             margin-top: 25px;
-            width: 315px;
-            height: 315px;
+            width: 330px;
+            height: 330px;
             display: flex;
             flex-wrap: wrap;
-            border: 15px solid rgb(231, 72, 51);
+            border: 8px solid rgb(231, 72, 51);
             border-radius: 10px;
             
         }
@@ -37,12 +37,12 @@
         }
 
         #startgame{
-            padding: 20px;
-            padding-top: 18px;
-            padding-bottom: 18px;
+            padding: 10px;
+            padding-top: 9px;
+            padding-bottom: 9px;
             font-family: 'Noto sans';
-            font-size: 17pt;
-            font-weight: 800;
+            font-size: 10pt;
+            font-weight: 400;
             border-radius: 5px;
             margin-top: 50px;
             border: black 3px solid;
@@ -55,11 +55,11 @@
             display: block;
         }
         #restartbtn{
-            padding: 20px;
+            padding: 10px;
             font-family: 'Noto sans';
             visibility: hidden;
-            font-size: 17pt;
-            font-weight: 800;
+            font-size: 10pt;
+            font-weight: 400;
             border-radius: 5px;
             margin-top: 20px;
             border: black 3px solid;
@@ -72,7 +72,7 @@
         #bestRecord{
             margin-top: 30px;
             text-align: center;
-            font-size: 20pt;
+            font-size: 16pt;
             display: none;
         }
         h1{
@@ -83,14 +83,14 @@
 </head>
 <body>
     
-    <div style="font-family: 'Noto sans'; font-weight: 700;">
+    <div style="font-family: 'Noto sans'; font-weight: 400;">
         <div>
-        <span style="font-size: 20pt; ">Your score </span>
-        <span id="score" style="font-size: 30pt; padding-left: 5px;" >0</span>
+        <span style="font-size: 10pt; ">Your score </span>
+        <span id="score" style="font-size: 20pt; padding-left: 5px;" >0</span>
         </div>
         <div>
-        <span style="font-size:  20pt;">Time Left </span>
-        <span id="time-left" style="font-size: 30pt; padding-left: 5px;">15</span>
+        <span style="font-size:  10pt;">Time Left </span>
+        <span id="time-left" style="font-size: 20pt; padding-left: 5px;">15</span>
         </div>
     </div>
 
