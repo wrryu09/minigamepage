@@ -9,14 +9,15 @@
             text-align: center;
             
             margin-top: 80px;  
-            margin-left: 20px;
+            margin-left: 30px;
+            margin-right: 30px
             margin-bottom: 80px;
         }
         .grid{
             margin: auto;
             margin-top: 25px;
-            width: 630px;
-            height: 620px;
+            width: 315px;
+            height: 315px;
             display: flex;
             flex-wrap: wrap;
             border: 15px solid rgb(231, 72, 51);
@@ -24,8 +25,8 @@
             
         }
         .square{
-            height: 200px;
-            width: 200px;
+            height: 100px;
+            width: 100px;
             border: 1px solid rgb(231, 72, 51);
         }
         .mole{
