@@ -13,6 +13,10 @@
    
     <title>Till You Win</title>
     <style>
+        
+        a{
+            display: none;
+        }
         body{
             background-color: rgb(106, 185, 255);
             text-align: center;
