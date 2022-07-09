@@ -171,7 +171,7 @@
             
             function moveMole(){
                 
-                timerId = setInterval(randomSquare, 300) 
+                timerId = setInterval(randomSquare, 400) 
                 
             }
 
