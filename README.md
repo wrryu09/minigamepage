@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +15,7 @@
         .grid{
             margin: auto;
             margin-top: 25px;
-            width: 608px;
+            width: 610px;
             height: 607px;
             display: flex;
             flex-wrap: wrap;
@@ -99,7 +98,7 @@
         timeGoes();
         this.style.visibility='hidden';
         "></p>
-    </div>
+    
 
     <div class="grid">
         <div class="square" id="1"></div>
