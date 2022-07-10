@@ -32,6 +32,9 @@
         .mole{
             background-color: rgb(255, 188, 19);
         }
+        .moleclicked{
+            background-color: rgb(133, 215, 19);
+        }
         .centerhow{
             position: relative;
         }
@@ -149,7 +152,8 @@
             
             function randomSquare(){
                 squares.forEach(square =>{
-                    square.classList.remove('mole')
+                    square.classList.remove('mole');
+                    square.classList.remove('moleclicked');
                 } )//getting each square, removing involved class
 
                 let randomPosition = squares[Math.floor(Math.random()*9)]
@@ -162,6 +166,7 @@
             squares.forEach(square => {
                 square.addEventListener("mousedown",()=>{
                     if(square.id == hitPosition){
+                    square.classList.add('moleclicked');
                         result++;
                         score.textContent = result;
                         hitPosition = null; //clearout
