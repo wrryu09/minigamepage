@@ -2,70 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <title>!!BREAK OUT!!</title>
-    <style>
-        body{
-            text-align: center;
-            font-family: 'Noto sans';
-        }
-        #score{
-            margin-top: 60px;
-            font-weight: 800;
-            font-size: 20pt;
-        }
-        #startbtn{
-            margin-top: 30px;
-            padding: 10px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            font-weight: 800;
-            font-size: 10pt;
-            background-color: orange;
-            border-radius: 5px;
-            /* border: none; */
-            border: 3px solid  rgb(188, 96, 70);
-            color:  rgb(105, 61, 49);
-        }
-        .grid{
-            position: absolute;
-            width: 560px;
-            height: 300px;
-            border: 1px solid black;
-            margin-top: 0px;
-            background-color: rgb(105, 61, 49);
-            border-radius: 10px;
-            border: 5px solid rgb(79, 43, 33);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .block{
-            position: absolute;
-            width: 100px;
-            height: 20px;
-            background-color: rgb(201, 111, 87);
-            left: 50px;
-            border-radius: 5px;
-            
-        }
-        .user{
-            position: absolute;
-            width: 100px;
-            height: 10px;
-            background-color: rgb(255, 216, 172);
-            left: 50px;
-            border-radius: 3px;
-            
-        }
-        .ball{
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            border-radius: 10px;
-            background-color: orange;
-        }
-    </style>
+   <link rel="stylesheet" href="game_BreakOut.css">
 </head>
 <body>  
     <div id="score">0</div>
