@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>!!BREAK OUT!!</title>
    <link rel="stylesheet" href="game_BreakOut.css">
 </head>
@@ -23,14 +23,14 @@
         
             if(currentPosition[0]>0){
             
-                        currentPosition[0] -= 22
+                        currentPosition[0] -= 15
                         drawUser()
                     }
                 
         ">
         <input type="button" id="rightGo" value=">" onmousedown="
         if(currentPosition[0]<boardWidth-blockWidth){
-                    currentPosition[0] += 22
+                    currentPosition[0] += 15
                     drawUser()
         }">
     </div></div>
