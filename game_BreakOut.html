@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>!!BREAK OUT!!</title>
    <link rel="stylesheet" href="game_BreakOut.css">
 </head>
@@ -11,22 +12,43 @@
     <div><input type="button" id="startbtn" value="START" onclick="
         
         startBallMove();
+        btnEnable();
         this.style.visibility='hidden';
         ">
     </div>
 
-    <div class="grid">
+    <div id="mainbox"><div class="grid">
         <!--<div class="block"></div>-->
-    </div>
+        <input type="button" id="leftGo" value="<" onmousedown="
+        
+            if(currentPosition[0]>0){
+            
+                        currentPosition[0] -= 15
+                        drawUser()
+                    }
+                
+        ">
+        <input type="button" id="rightGo" value=">" onmousedown="
+        if(currentPosition[0]<boardWidth-blockWidth){
+                    currentPosition[0] += 15
+                    drawUser()
+        }">
+    </div></div>
 
     
-    <!-- <div><input type="button" id="restartbtn" value="restart" onclick="
+    <div><input type="button" id="restartbtn" value="restart" onclick="
         reset();
+        btnEnable();
+        document.addEventListener('keydown',moveUser);
+        startBallMove();
         
-        "></div> -->
+        "></div>
 
+    
+    
 
     <script>
+        
         const grid = document.querySelector('.grid');
         const blockWidth = 100
         const blockHeight = 20
@@ -55,9 +77,10 @@
             this.topRight = [xAxis + blockWidth, yAxis]
             }
         }
+        
 
         //all my blocks
-        const blocks =[
+        let blocks =[
             new Block(10, 270),
             new Block(120, 270),
             new Block(230, 270),
@@ -83,7 +106,7 @@
         //draw all my blocks
         function addBlocks(){
         
-        for(let i =0; i<blocks.length; i++){
+        for(let i =0; i<15; i++){
             const block = document.createElement('div');
             block.classList.add('block');
             block.style.left = blocks[i].bottomLeft[0] + 'px'
@@ -156,31 +179,65 @@
         function startBallMove(){
             timerId = setInterval(moveBall, 13);
         }
-        // function showBlocks(){
-        //     for(let i =0; i<blocks.length; i++){
-        //         const allBlocks = Array.from(document.querySelectorAll('.block'))
-        //         allBlocks[i].classList.add('block')
-        //     }
-        // }
-        // function killAllBlocks(){
-        //     for(let i =0; i<blocks.length; i++){
-        //         const allBlocks = Array.from(document.querySelectorAll('.block'))
-        //         allBlocks[i].classList.remove('block')
-        //             blocks.splice(i,1)
-        //     }
-        // }
-        // function reset(){
-            
-        //     killAllBlocks();
-        //     addBlocks();
-        //     showBlocks();
-        //     score = 0;
-        //     scoreDisplay.innerHTML =score;
-        //     ballCurrentPosition = ballStart;
-        //     currentPosition = userStart;
-        //     startBallMove();
 
+
+        // function killandMakeNewBlocks(){
+        //     console.log(addBlocks.block);
+        //     for(let i =0; i<blocks.length; i++){
+        //     block.classList.remove('block');
+        //     block.style.left = blocks[i].bottomLeft[0] + 'px'
+        //     block.style.bottom = blocks[i].bottomLeft[1] + 'px'
+        //     grid.appendChild(block);
         // }
+        //     blocks=[];
+       
+        //     blocks =[
+        //     new Block(10, 270),
+        //     new Block(120, 270),
+        //     new Block(230, 270),
+        //     new Block(340, 270),
+        //     new Block(450, 270),
+
+        //     new Block(10, 240),
+        //     new Block(120, 240),
+        //     new Block(230, 240),
+        //     new Block(340, 240),
+        //     new Block(450, 240),
+
+        //     new Block(10, 210),
+        //     new Block(120, 210),
+        //     new Block(230, 210),
+        //     new Block(340, 210),
+        //     new Block(450, 210),
+            
+
+        // ]
+        // for(let i =0; i<blocks.length; i++){
+        //     let block = document.createElement('div');
+        //     block.classList.add('block');
+        //     block.style.left = blocks[i].bottomLeft[0] + 'px'
+        //     block.style.bottom = blocks[i].bottomLeft[1] + 'px'
+        //     grid.appendChild(block);
+        // }
+        
+        
+                
+        // }
+            
+            
+           
+        
+        function reset(){
+            // killandMakeNewBlocks();
+            // ballCurrentPosition =[270,40];
+            // drawBall();
+            // currentPosition = [230, 10];
+            // drawUser();
+            // score = 0;
+            // scoreDisplay.innerHTML =score;
+            window.location.reload();
+        
+        }
         
 
 
@@ -208,6 +265,9 @@
                         scoreDisplay.innerHTML=':: YOU WIN ::'
                         clearInterval(timerId)
                         document.removeEventListener('keydown',moveUser)
+                        
+                        btnDisable();
+                        document.getElementById('restartbtn').style.visibility='visible';
                     }
                 }
             }
@@ -232,9 +292,24 @@
                 clearInterval(timerId);
                 scoreDisplay.innerHTML = 'YOU LOSE'
                 document.removeEventListener('keydown', moveUser);
+                btnDisable();
+                document.getElementById('restartbtn').style.visibility='visible';
 
             }
             
+        }
+        const leftbtn = document.getElementById('leftGo')
+        const rightbtn = document.getElementById('rightGo')
+
+        function btnDisable(){
+           
+            leftbtn.disabled= true;
+            rightbtn.disabled = true;
+        }
+        btnDisable();
+        function btnEnable(){
+            leftbtn.disabled= false;
+            rightbtn.disabled = false;
         }
 
         function changeDirection(){
