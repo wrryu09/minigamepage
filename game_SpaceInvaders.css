@@ -9,8 +9,10 @@
     font-weight: 700;
 }
 @font-face {
-    font-family: WINGDING2;
-    src: url(https://wrryu09.github.io/Space-Invaders/WINGDNG2.TTF);
+    font-family: (Wingdings 2) ;
+    src: url(https://wrryu09.github.io/Space-Invaders/WINGDNG2.TTF),
+    url(https://wrryu09.github.io/Space-Invaders/WINGDNG2.ttf);
+    
     
 }
 #titleh2{
