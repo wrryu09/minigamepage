@@ -2,6 +2,17 @@
     background-color: greenyellow;
     color: black;
 }
+@font-face {
+    font-family: ROG Fonts;
+    src:
+    url(https://wrryu09.github.io/Space-Invaders/ROGFONTS-REGULAR.OTF);
+    font-weight: 700;
+}
+@font-face {
+    font-family: WINGDING2;
+    src: url(https://wrryu09.github.io/Space-Invaders/WINGDNG2.TTF);
+    
+}
 #titleh2{
     font-size: 15pt;
     padding-bottom: 15px;
