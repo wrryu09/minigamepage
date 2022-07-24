@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7JJNKWQEV"></script>
 <script>
@@ -59,6 +60,8 @@
             padding: 10px;
             padding-top: 7px;
             padding-bottom: 7px;
+
+            display: inline-block;
         }
         #scissorsbtn{
             border-radius: 5px;
@@ -66,6 +69,7 @@
             padding: 10px;
             padding-top: 7px;
             padding-bottom: 7px;
+            display: inline-block;
         }
         #paperbtn{
             border-radius: 5px;
@@ -73,12 +77,15 @@
             padding: 10px;
             padding-top: 7px;
             padding-bottom: 7px;
+            display: inline-block;
         }
         #RPSbtn{
             display: block;
+            text-align: center;
         }
         #restartbtn{
             display: none;
+            
             margin: none;
             color: red;
             background-color: rgb(255, 201, 84);
@@ -88,13 +95,16 @@
             padding:9px;
             padding-top:5px;
             padding-bottom:5px;
-            margin-top: 40px;
-            margin-left: 60px;
+            margin-bottom: 50px;
+           
             
         }
         #emoji{
             padding: 20px;
             padding-bottom: 40px;
+        }
+        .forRestartBtnCenter{
+            text-align: center;
         }
     </style>
 </head>
@@ -219,7 +229,7 @@
     youchoserock();
     computervaluedecide();
     whowon();
-    document.querySelector('#restartbtn').style.display='block';
+    document.querySelector('#restartbtn').style.display='inline-block';
     this.style.border='3px solid red';
     document.querySelector('#scissorsbtn').style.visibility='hidden';
     document.querySelector('#paperbtn').style.visibility='hidden';
@@ -230,7 +240,7 @@
     youchosesci();
     computervaluedecide();
     whowon();
-    document.querySelector('#restartbtn').style.display='block';
+    document.querySelector('#restartbtn').style.display='inline-block';
     this.style.border='3px solid red';
     document.querySelector('#rockbtn').style.visibility='hidden';
     document.querySelector('#paperbtn').style.visibility='hidden';
@@ -242,7 +252,7 @@
     youchosepaper();
     computervaluedecide();
     whowon();
-    document.querySelector('#restartbtn').style.display='block';
+    document.querySelector('#restartbtn').style.display='inline-block';
     this.style.border='3px solid red';
     document.querySelector('#rockbtn').style.visibility='hidden';
     document.querySelector('#scissorsbtn').style.visibility='hidden';
@@ -254,7 +264,7 @@
         <p id="result_draw">Draw!</p>
     </div>
     
-    <div><input type="button" id="restartbtn" value="restart" onclick="
+    <div id="forRestartBtnCenter"><input type="button" id="restartbtn" value="restart" onclick="
         startTimer();
         document.querySelector('#rockbtn').style.border='none';
         document.querySelector('#scissorsbtn').style.border='none';
