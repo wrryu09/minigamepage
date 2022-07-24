@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minigame</title>
+    <style>
+        body{
+            background-color: #262626;
+            text-align: center;
+            margin: 50px;
+        }
+        .font{
+            font-family: 'Futura';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+        }
+        #date{
+            font-family: 'Futura';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 200;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+            margin-bottom: 100px;
+            margin-top: 20px;
+        }
+        p{
+            font-family: 'Futura';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 10px;
+            color: #FFFFFF;
+            margin-top: 70px;
+        }
+        .images{
+            width: 362px;
+            height: 218px;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="font">MINIGAME</h1>
+    <p class="font" id="date">2022.07.05 - 2022.07.20</p>
+    <img class="images" id="rock" src="Images/rock.jpg">
+    <img class="images" id="memory" src="Images/memory.jpg">
+    <img class="images" id="mole" src="Images/mole.jpg">
+    <img class="images" id="breakOut" src="Images/break.jpg">
+    <img class="images" id="frogger" src="Images/frogger.jpg">
+    <img class="images" id="space" src="Images/space.jpg">
+
+    <footer>
+        <p>©2022 rryu09</p>
+    </footer>
+
+    <script>
+        const rock = document.getElementById('rock')
+        const memory = document.getElementById('memory')
+        const mole = document.getElementById('mole')
+        const breakOut = document.getElementById('breakOut')
+        const frogger = document.getElementById('frogger')
+        const space = document.getElementById('space')
+
+       const rockmouseon =  "Images/rockmouseon.jpg";
+       const memorymouseon =  "Images/memorymouseon.jpg";
+       const molemouseon =  "Images/molemouseon.jpg";
+       const breakmouseon =  "Images/breakmouseon.jpg";
+       const froggermouseon =  "Images/froggermouseon.jpg";
+       const spacemouseon =  "Images/spacemouseon.jpg";
+
+        const rockstart = rock.src;
+        const memorystart = memory.src;
+        const molestart = mole.src;
+        const breakOutstart = breakOut.src;
+        const froggerstart = frogger.src;
+        const spacestart = space.src;
+
+
+       rock.onmouseover = () => {rock.src = rockmouseon; }
+       rock.onmouseout = () => {rock.src = rockstart; }
+       //rock.onclick = () =>{location.href = 'https://wrryu09.github.io/RockPaperScissors/'}
+       rock.onclick = () =>{window.open('https://wrryu09.github.io/RockPaperScissors/')}
+
+       memory.onmouseover = () => {memory.src =memorymouseon; }
+       memory.onmouseout = () => {memory.src = memorystart; }
+       memory.onclick = () =>{window.open('https://wrryu09.github.io/memorygame/#try-0')}
+
+       mole.onmouseover = () => {mole.src = molemouseon; }
+       mole.onmouseout = () => {mole.src = molestart; }
+       mole.onclick = () =>{window.open('https://wrryu09.github.io/WhacAMole/')}
+
+       breakOut.onmouseover = () => {breakOut.src = breakmouseon; }
+       breakOut.onmouseout = () => {breakOut.src = breakOutstart; }
+       breakOut.onclick = () =>{window.open('https://wrryu09.github.io/BreakOut/game_BreakOut.html')}
+
+       frogger.onmouseover = () => {frogger.src = froggermouseon; }
+       frogger.onmouseout = () => {frogger.src = froggerstart; }
+       frogger.onclick = () =>{window.open('https://wrryu09.github.io/Frogger/game_Frogger.html')}
+
+       space.onmouseover = () => {space.src = spacemouseon; }
+       space.onmouseout = () => {space.src = spacestart; }
+       space.onclick = () =>{window.open('https://wrryu09.github.io/Space-Invaders/game_SpaceInvaders.html')}
+
+        
+    </script>
+</body>
+</html>
