@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="game_memory.css">
+</head>
+<body>
+    <h3 style="padding-top: 50px; margin-bottom: 5px;">Score: <span id="result"></span></h3>
+    <h3 style="margin-top: 5px">Try: <span id="attempt"></span></h3>
+    <h1 id="congrats">Congratulations! <br> You found them all!</h1>
+
+    <div id="grid"></div>
+    
+
+    <div><input type="button" id="restart" value="restart" onclick="
+        //restart();
+        this.style.display='none';       
+        window.location.reload();
+        "></div>
+
+        <script src="game_memory.js"></script>
+</body>
+</html>
