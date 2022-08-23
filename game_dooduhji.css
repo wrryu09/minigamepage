@@ -1,0 +1,80 @@
+body,article {
+    background-color: white;
+    font-family: 'Noto sans';
+    text-align: center;
+    
+    margin-top: 80px;  
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+}
+.grid{
+    margin: auto;
+    margin-top: 25px;
+    width: 307px;
+    height: 308px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 8px solid rgb(231, 72, 51);
+    border-radius: 10px;
+    
+}
+.square{
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(231, 72, 51);
+}
+.mole{
+    background-color: rgb(255, 188, 19);
+}
+.moleclicked{
+    background-color: rgb(133, 215, 19);
+}
+.centerhow{
+    position: relative;
+}
+
+#startgame{
+    padding: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-family: 'Noto sans';
+    font-size: 10pt;
+    font-weight: 800;
+    border-radius: 5px;
+    margin-top: 50px;
+    border: black 2px solid;
+    color: black;
+    /*background-color: rgb(255, 231, 176);*/
+    
+    /*box-shadow: 0px 5px 7px lightgray ;*/
+}
+#finalScore{
+    display: block;
+    font-weight: 300;
+    font-size: 8pt;
+}
+#restartbtn{
+    padding: 10px;
+    font-family: 'Noto sans';
+    visibility: hidden;
+    font-size: 10pt;
+    font-weight: 800;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: black 2px solid;
+    color: black;
+}
+
+#bestRecordUsernameInput{
+    display: none;
+}
+#bestRecord{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12pt;
+    display: none;
+}
+h1{
+    display: none;
+}

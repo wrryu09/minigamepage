@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Hi There</title>
+    <link rel="stylesheet" href="game_dooduhji.css">
+</head>
+<body>
+    
+    <div style="font-family: 'Noto sans'; font-weight: 700;">
+        <div>
+        <span style="font-size: 10pt; ">Your score </span>
+        <span id="score" style="font-size: 20pt; padding-left: 5px;" >0</span>
+        </div>
+        <div>
+        <span style="font-size:  10pt;">Time Left </span>
+        <span id="time-left" style="font-size: 20pt; padding-left: 5px;">15</span>
+        </div>
+    </div>
+
+    <p><input type="button" id="startgame" value="START" onclick="
+        moveMole();
+        timeGoes();
+        this.style.visibility='hidden';
+        "></p>
+    
+
+    <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div> </div>
+
+        
+        <br><div><input type="button" id="restartbtn" value="restart" onclick="
+            restart();
+            this.style.visibility='hidden';
+            
+            "></div>
+        <div id="bestRecord">
+            <h2 style="margin-bottom: 10px; margin-top:90px">BEST RECORD</h2>
+            <h2 id="bestRecordScore" style="margin-top: 8px;"></h2> 
+            <!--<span id="username"></span>-->
+        </div>
+        <br><div id="finalScore" style="margin-bottom: 120px;"></div>
+
+        <script src="game_dooduhji.js"></script>
+
+<article>
+    <footer>
+        <p>© 2022 rryu09</p>
+    </footer>
+</article>
+</body>
+</html>
