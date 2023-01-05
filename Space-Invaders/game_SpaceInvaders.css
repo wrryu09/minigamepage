@@ -1,0 +1,121 @@
+::selection{
+    background-color: greenyellow;
+    color: black;
+}
+@font-face {
+    font-family: ROG Fonts;
+    src:
+    url(https://wrryu09.github.io/Space-Invaders/ROGFONTS-REGULAR.OTF);
+    font-weight: 700;
+}
+@font-face {
+    font-family: (Wingdings 2) ;
+    src: url(https://wrryu09.github.io/Space-Invaders/WINGDNG2.TTF),
+    url(https://wrryu09.github.io/Space-Invaders/WINGDNG2.ttf);
+    
+    
+}
+#titleh2{
+    font-size: 15pt;
+    padding-bottom: 15px;
+}
+
+p{
+    padding-top: 45px;
+    font-size: 7pt;
+    font-family: calbri;
+}
+body{
+    text-align: center;
+    background-color: black;
+    color: greenyellow;
+    margin: 50px;
+    font-family: 'ROG Fonts';
+    
+}
+/*.results{
+    border: 1px solid greenyellow;
+    
+}*/
+.grid{
+    width: 300px;
+    height: 300px;
+    border: solid 1px  greenyellow;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+.invader{
+    background-color: rgb(222, 51, 222);
+    border-radius: 10px;
+}
+.shooter{
+    background-color: red;
+}
+.laser{
+    background-color: greenyellow;
+}
+.BOOM{
+    background-color: aqua;
+}
+#niceday{
+    padding-top: 20px;
+    font-family: 'Wingdings 2';
+}
+#buttons{
+   margin-top: 15px;
+   display: block;
+}
+.btnleft{
+    color: greenyellow;
+    background-color: black;
+    border: 1px solid greenyellow;
+    border-radius: 2px;
+    width: 50px;
+    height: 50px;
+   font-size: 17pt;
+   font-weight: 700;
+}
+.btnshoot{    
+    color: greenyellow;
+    background-color: black;
+    border: 1px solid greenyellow;
+    border-radius: 2px;
+    width: 50px;
+    height: 50px;
+   font-size: 17pt;
+   font-weight: 700;
+   margin-left: 2px;
+   margin-right: 2px;
+}
+.btnright{
+    color: greenyellow;
+    background-color: black;
+    border: 1px solid greenyellow;
+    border-radius: 2px;
+    width: 50px;
+    height: 50px;
+   font-size: 17pt;
+   font-weight: 700;
+}
+#restartbtn{
+    color: black;
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    border-radius: 2px;
+    font-size: 15pt;
+   font-weight: 700;
+   font-family: 'ROG Fonts';
+   margin: 30px;
+   visibility: hidden;
+}
+.btnclicked{
+    background-color: greenyellow;
+    color: black;
+    
+}
