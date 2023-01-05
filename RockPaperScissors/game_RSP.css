@@ -1,0 +1,91 @@
+
+        @font-face {
+            font-family: Futura;
+            src:
+            url(https://wrryu09.github.io/RockPaperScissors/UNICODE.FUTURAB.TTF);
+        }
+
+        body{
+            background-color: rgb(106, 185, 255);
+            text-align: center;
+        }
+        #emoji{
+            font-size: 150pt;
+        }
+        #emorock{
+            display: block;
+        }
+        #emosci{
+            display: none;
+        }
+        #emopaper{
+            display: none;
+        }
+        #result{
+            font-size: 50pt;
+            font-family: 'Futura';
+            color: rgb(255, 201, 84);
+            padding: none;
+        }
+        #result_victory{
+            display: none;
+        }
+        #result_lose{
+            display: none;
+        }
+        #result_draw{
+            display: none;
+        }
+
+        #rockbtn{
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+
+            display: inline-block;
+        }
+        #scissorsbtn{
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            display: inline-block;
+        }
+        #paperbtn{
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            display: inline-block;
+        }
+        #RPSbtn{
+            display: block;
+            text-align: center;
+        }
+        #restartbtn{
+            display: none;
+            
+            margin: none;
+            color: red;
+            background-color: rgb(255, 201, 84);
+            border-radius: 5px;
+            border: none;
+            font-family: 'Futura';
+            padding:9px;
+            padding-top:5px;
+            padding-bottom:5px;
+            margin-bottom: 50px;
+           
+            
+        }
+        #emoji{
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+        .forRestartBtnCenter{
+            text-align: center;
+        }

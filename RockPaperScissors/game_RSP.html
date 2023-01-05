@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Till You Win</title>
+   <link rel="stylesheet" href="game_RSP.css">
+</head>
+
+
+<body>
+    <div id="emoji">
+    <div id="emorock">✊</div>
+    <div id="emosci">✌</div>
+    <div id="emopaper">🤚</div>
+    </div>
+
+
+    <div id="RPSbtn">
+    <input type="button" id="rockbtn" value="✊" onclick="
+    stopTimer();
+    youchoserock();
+    computervaluedecide();
+    whowon();
+    document.querySelector('#restartbtn').style.display='inline-block';
+    this.style.border='3px solid red';
+    document.querySelector('#scissorsbtn').style.visibility='hidden';
+    document.querySelector('#paperbtn').style.visibility='hidden';
+    
+    ">
+    <input type="button" id="scissorsbtn" value="✌" onclick="
+    stopTimer();
+    youchosesci();
+    computervaluedecide();
+    whowon();
+    document.querySelector('#restartbtn').style.display='inline-block';
+    this.style.border='3px solid red';
+    document.querySelector('#rockbtn').style.visibility='hidden';
+    document.querySelector('#paperbtn').style.visibility='hidden';
+    
+    
+    ">
+    <input type="button" id="paperbtn" value="🤚" onclick="
+    stopTimer();
+    youchosepaper();
+    computervaluedecide();
+    whowon();
+    document.querySelector('#restartbtn').style.display='inline-block';
+    this.style.border='3px solid red';
+    document.querySelector('#rockbtn').style.visibility='hidden';
+    document.querySelector('#scissorsbtn').style.visibility='hidden';
+    
+    ">
+    <div id="result">
+        <p id="result_victory">Victory!</p>
+        <p id="result_lose">You Lose...</p>
+        <p id="result_draw">Draw!</p>
+    </div>
+    
+    <div id="forRestartBtnCenter"><input type="button" id="restartbtn" value="restart" onclick="
+        startTimer();
+        document.querySelector('#rockbtn').style.border='none';
+        document.querySelector('#scissorsbtn').style.border='none';
+        document.querySelector('#paperbtn').style.border='none';
+        document.querySelector('#result_victory').style.display='none';
+        document.querySelector('#result_lose').style.display='none';
+        document.querySelector('#result_draw').style.display='none';
+        document.querySelector('#rockbtn').style.visibility='visible';
+        document.querySelector('#scissorsbtn').style.visibility='visible';
+        document.querySelector('#paperbtn').style.visibility='visible';
+        this.style.display='none';
+
+        
+        "></div>
+    </div>
+
+    <script src="game_RSP.js"></script>
+    
+</body>
+
+</html>
